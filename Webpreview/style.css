@@ -1,12 +1,35 @@
 .big-box {
-  width: 70%;
-  height: 90%;
   background-color: #C6C6C6;
   border: #444 2px solid;
-  border-radius: 30px;
   box-shadow: 0px 10px 20px #529acd55;
-  margin: auto;
+
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  
+  margin-top: 20px;
   padding: 30px;
+  width: 40%;
+  height: auto;
+}
+
+/* block of code styled like cmd prompt but cool and modern */
+.code-block {
+  background-color: #1E1F29;
+  color: #DDE2FF;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  
+  text-align: left;
+  margin-top: 20px;
+  padding: 30px;
+  width: 20%;
+  /* max-height: 200px; */
+  /* max-height: 5%; */
+  overflow-y: auto;
 }
 
 body {
@@ -26,6 +49,14 @@ h1 {
 }
 
 p {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.code-block:pre
+
+pre {
   font-size: 1.2em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;

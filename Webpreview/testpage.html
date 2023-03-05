@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>DTUMath-interactive-compendium</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" /> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var pythonCode = document.getElementById('python-code');
+            pythonCode.innerHTML = Prism.highlight(pythonCode.innerHTML, Prism.languages.python);
+        });
+    </script>
+    <style>
+    .token.operator {
+        background: none;
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a style="color:white;font-size:18px;margin-right: 10px;" href="index.html">Home</a></li>
+          <li><a style="color:white;font-size:18px;margin-right: 10px;" href="math1.html">Math 1</a></li>
+          <li><a style="color:white;font-size:18px;margin-right: 10px;" href="math2.html">Math 2</a></li>
+          <li><a style="color:white;font-size:18px;margin-right: 10px;" href="testpage.html">Test page</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+
+    <div style="display:flex; justify-content: center;">
+        <div class="big-box">
+            <p>$$\displaystyle \sum_{x=1}^{\infty} \frac{1}{x^{11}}$$</p>
+        </div>
+        <div class="code-block">
+            <div id="python-code">Sum(x**5 * x**(-16),(x,1,oo))</div>
+        </div>
+    </div>
+  </body>
+</html>
