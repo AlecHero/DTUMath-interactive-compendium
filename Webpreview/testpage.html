@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>DTUMath-interactive-compendium</title>
     
+    <script>
+        MathJax = {
+          tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+          svg: { fontCache: 'global' }
+        };
+    </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
@@ -12,6 +18,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -41,10 +49,13 @@
 
     <div style="display:flex; justify-content: center;">
         <div class="big-box">
-            <p>$$\displaystyle \sum_{x=1}^{\infty} \frac{1}{x^{11}}$$</p>
+            <p>Wow wtf, et sum tegn 😱 $$\displaystyle \sum_{x=1}^{\infty} \frac{1}{x^{11}}$$</p>
+            <p>Og wow, den viser faktisk den unendelige sum? 🤯</p>
         </div>
         <div class="code-block">
-            <div id="python-code">Sum(x**5 * x**(-16),(x,1,oo))</div>
+            <div id="python-code">
+                Sum(x**5 * x**(-16),(x,1,oo))
+            </div>
         </div>
     </div>
   </body>
