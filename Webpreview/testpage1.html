@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DTUMath-interactive-compendium</title>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
+    <script>
+        MathJax = {
+          tex: { inlineMath: [['$', '$']] }
+        };
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/line-numbers/prism-line-numbers.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/line-numbers/prism-line-numbers.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a style="color:white;font-size:18px;margin-right: 10px;" href="index.html">Home</a></li>
+            <li><a style="color:white;font-size:18px;margin-right: 10px;" href="math1.html">Math 1</a></li>
+            <li><a style="color:white;font-size:18px;margin-right: 10px;" href="math2.html">Math 2</a></li>
+            <li><a style="color:white;font-size:18px;margin-right: 10px;" href="testpage1.html">Test page1</a></li>
+            <li><a style="color:white;font-size:18px;margin-right: 10px;" href="testpage2.html">Test page2</a></li>
+            <li><a style="color:white;font-size:18px;margin-right: 10px;" href="testpage3.html">Test page3</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    
+    <div style="display:flex; justify-content: center;">
+        <div class="big-box">
+            <p>Wow wtf, et sum tegn 😱 $\displaystyle \sum_{x=1}^{\infty} \frac{1}{x^{11}}$</p>
+            <p>Og wow, den viser faktisk den unendelige sum? 🤯</p>
+        </div>
+        <div class="code-block language-python">
+            <code class="language-python" style="background:none;">Sum(x**5 * x**(-16),(x,1,oo))</pre>
+        </div>
+    </div>
+</body>
+</html>
