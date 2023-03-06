@@ -6,25 +6,11 @@
     
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+    <script src="menu.js"></script>
+
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a style="color:white;font-size:18px;margin-right: 10px;" href="index.html">Home</a></li>
-          <li><a style="color:white;font-size:18px;margin-right: 10px;" href="math1.html">Math 1</a></li>
-          <li><a style="color:white;font-size:18px;margin-right: 10px;" href="math2.html">Math 2</a></li>
-          <li><a style="color:white;font-size:18px;margin-right: 10px;" href="testpage1.html">Test page1</a></li>
-          <li><a style="color:white;font-size:18px;margin-right: 10px;" href="testpage2.html">Test page2</a></li>
-          <li><a style="color:white;font-size:18px;margin-right: 10px;" href="testpage3.html">Test page3</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <h1>Information</h1>
-    <p>Github link: <a href="https://github.com/AlecHero/DTUMath-interactive-compendium">AlecHero/DTUMath-interactive-compendium</a></p>
-    <p>DTU Math link: <a href="https://01005.compute.dtu.dk/">01005.compute.dtu.dk</a></p>
+  <body style="overflow: hidden;">
+    <iframe src="start.html" name="content" width="100%" style="border-width:0px; overflow:scroll; position:absolute; left: 0px; top:100px; height:calc(100vh - 100px)" borders="0"></iframe>
   </body>
 </html>
